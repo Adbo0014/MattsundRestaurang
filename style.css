@@ -50,11 +50,10 @@ ul{
 .logo{
     margin-top: 15px;
     width: 100%;
-    font-size: 32px;
+    font-size: 14px;
     font-weight: 600;
     text-align: center;
     display: block;
-
 }
 .navbar{
     margin-top: 0px;
@@ -62,12 +61,34 @@ ul{
     display: flex;
     justify-content: center;
 }
+.navbar a{
+    font-size: 14px;
+}
 .navitem{
     margin: 0 5px;
 }
 .navlink{
     border-right: 1px solid #464646;
     padding-right: 10px;
+}
+@media(min-width: 380px){
+    .logo{
+        margin-top: 15px;
+        width: 100%;
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        display: block;
+    }
+    .navbar{
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+    .navbar a{
+        font-size: 16px;
+    }
 
 }
 .welcome-menu{
@@ -105,32 +126,33 @@ ul{
     margin: 0 auto;
     margin-top: 10px;
 }
-.news{
-    height: 600px;
-}
+
 .first-news{
+    margin: auto;
     margin-top: 10px;
-    height: 300px;
+    width: 300px;
+    min-height: 300px;
 }
 .second-news{
-    margin-top: 40px;
-    height: 300px;
+    margin-top: 50px;
+    margin: auto;
+    width: 300px;
+    min-height: 120px;
 }
 .pizza{
     width: 50%;
-    height: 100px;
+    min-height: 120px;
     margin: 0 auto;
 }
 .contact{
-    min-height: 500px;
-    margin: 0 auto;
-
+    min-height: 800px;
 }
 .contact-us{
     text-align: center;
-    margin: 0 auto;
-    width: 350px;
-    margin: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 input[type=text], input[type=submit]{
     margin: 4px 0px;
@@ -143,74 +165,77 @@ button{
     margin: 0 auto;
     display: block;
 }
-.contact-map{
-    width: 100%;
-}
-video{
-    margin: 0 5%;
-}
-.contact-map p{
-    display:block;
-    margin: 0 auto;
+.contact-video{
+    text-align: center;
+    display: block;
     margin-bottom: 5px;
 }
-.about{
-    min-height: 300px;
+.contact-video video{
+    width: 300px;
+    height: 250px;
 }
-
-.about-p{
-    display: block;
-    width: 100%;
+.about{
+    width: 300px;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .about img{
-    margin-left: 50px;
-}
-.about p{
-    margin: 10px;
+    height: 250px;
+    width: 300px;
 }
 
-@media (min-width: 400px){
-    .welcome-menu{
-        min-height: 500px;
+
+
+@media(min-width: 1000px){
+    .news{
+        min-height: 350px;
     }
-}
-@media(min-width: 600px){
     .first-news{
+        margin-top: 10px;
         width: 40%;
         margin-left: 10%;
         float: left;
     }
     .second-news{
+        margin-top: 10px;
         width: 40%;
         margin-right: 10%;
-        margin-top: 10px;
         float: right;
     }
-    .news{
-        height: 300px;
-    }
-    .contacts{
-        width: 100%;
+    .contact{
+        min-height: 500px;
     }
     .contact-us{
-        margin-left: 100px;
-        max-width: 25%;
+        max-width: 250px;
+        float: right;
+        margin-right: 7%;
+    }
+    .contact-video{
+        width: 400px;
+        height: 400px;
+        float: left;
+        margin-left: 7%;
+    }
+    .about{
+        width: 90%;
+        min-height: 300px;
+        margin-bottom: 40px;
+    }
+    .about img{
+        width: 400px;
+        height: 300px;
         float: left;
     }
-    .contact-map{
-        margin-right: 40px;
-        margin-top: 60px;
-        max-width: 50%;
-        float: right;
-    }
-    .contact-map video{
-        width: 70%;
-        float: right;
-    }
-
-    .about-p{
+    .about p{
+        display: block;
+        height: 100%;
         width: 50%;
         float: right;
+    }
+    .contact-video video{
+        width: 400px;
+        height: 300px;
     }
 }
 
@@ -255,7 +280,7 @@ video{
     text-align: center;
 }
 .pizza-menu-col-second-lower{
-    margin-top: 80px;
+    margin-top: 20px;
     width: 100%;
     min-height: 300px;
     text-align: center;
@@ -264,7 +289,7 @@ video{
     margin-top: 20px;
 }
 .pizza-filler-second{
-    margin-top: 450px;
+    margin-top: 80px;
     width: 100%;   
     height: 100px;
 
@@ -282,7 +307,7 @@ table, th, td{
     border: 1px #464646 solid;
 }
 
-@media(min-width: 600px){
+@media(min-width: 800px){
     .pizza-menu-col-first{
         width: 40%;
         margin-left: 7%;
