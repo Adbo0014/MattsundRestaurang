@@ -207,15 +207,19 @@ button{
         min-height: 500px;
     }
     .contact-us{
+        display: block;
+        position: absolute;
         max-width: 250px;
-        float: right;
-        margin-right: 7%;
+        float: left;
+        margin-left: 17%;
     }
     .contact-video{
+        display: block;
         width: 400px;
         height: 400px;
-        float: left;
-        margin-left: 7%;
+        float: right;
+        margin-right: 15%;
+        margin-top: 70px;
     }
     .about{
         width: 90%;
