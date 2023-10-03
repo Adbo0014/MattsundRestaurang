@@ -32,7 +32,7 @@
             });
                 
         });
-        
+
         $(function(){
             $("#name-table").draggable();
         });
@@ -79,4 +79,4 @@
         document.getElementById("pizza-pic-second").src = "pizza1.jpg";
     }
 
-    //setInterval(menuPicture, 5000);
+    setInterval(menuPicture, 5000);
