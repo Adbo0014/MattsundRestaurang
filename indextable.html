@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Måttsund Restaurang</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    
 </head>
 <body>
     <header>
@@ -25,22 +30,32 @@
             <li class="navitem"><a href="index.html" class="navlink">Om oss</a></li>
         </ul>
     </header>
+    
+    <table id="name-table">
+        <tr>
+            <th>Förnamn</th>
+            <th>Efternamn</th>
+            <th>Ålder</th>
+        </tr>
+        <tr>
+            <td id="name1">Adrian</td>
+            <td id="lastName1">Boman</td>
+            <td id="age">23</td>
+        </tr>
+        <tr>
+            <td id="name2">Adrian</td>
+            <td id="lastName2">Boman</td>
+            <td id="age2">23</td>
+        </tr>
+    </table>
+    
+    <div class="buttons">
+        <button type="button" onclick="surNameFunction()" id="button-func">Förnamn</button>
+        <button type="button" onclick="lastNameFunction()" class="button-func">Efternamn</button>
+        <button type="button" onclick="ageFunction()" class="button-func">Ålder</button>
+    </div>
 
-    <table>
-        <tr>
-          <th>Förnamn</th>
-          <th>Efternamn</th>
-          <th>Ålder</th>
-        </tr>
-        <tr>
-          <td>Adrian</td>
-          <td>Boman</td>
-          <td>23</td>
-        </tr>
-        <tr>
-            <td>Adrian</td>
-            <td>Boman</td>
-            <td>23</td>
-        </tr>
-      </table>
+    <div id="moveGoal">
+        Drag the table here
+    </div>
 </body>
